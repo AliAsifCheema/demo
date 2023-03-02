@@ -1,0 +1,448 @@
+.App {
+  background: #0e1220;
+}
+
+.bg-overlay {
+  background: rgba(17, 165, 110, 0.15);
+}
+
+.bg-categories {
+  background: #044049;
+}
+
+.bg-cards {
+  background: linear-gradient(
+      0deg,
+      rgba(6, 90, 137, 0.4),
+      rgba(6, 90, 137, 0.4)
+    ),
+    #00cb51;
+}
+
+h1 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  /* identical to box height, or 121% */
+  letter-spacing: 0.015em;
+
+  color: #000000;
+}
+
+h2 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  /* identical to box height, or 130% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+h3 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+
+  /* identical to box height, or 137% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+h4 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+
+  /* identical to box height, or 138% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+h5 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+
+  /* identical to box height, or 136% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+h6 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+
+  /* identical to box height, or 156% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.p-18 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  /* identical to box height, or 156% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+.p-16 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* identical to box height, or 162% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+.banner-caption {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+
+  /* identical to box height, or 126% */
+  letter-spacing: 0.015em;
+
+  color: #000000;
+}
+
+.subheading {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  /* identical to box height, or 156% */
+  letter-spacing: 0.0125em;
+
+  color: #ffffff;
+}
+
+.header-text {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  /* identical to box height, or 100% */
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+.button {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+
+  /* identical to box height, or 80% */
+  letter-spacing: 0.0125em;
+  text-transform: capitalize;
+
+  color: #000000;
+  background: linear-gradient(
+      0deg,
+      rgba(6, 90, 137, 0.4),
+      rgba(6, 90, 137, 0.4)
+    ),
+    #00cb51;
+  border-radius: 4px;
+}
+
+/* ********************
+*********************
+Navbar CSS 
+*******************
+*********************/
+
+.navbar {
+  padding: 20px 0;
+}
+
+header::before {
+  position: absolute;
+  width: 745px;
+  height: 673px;
+  left: -371px;
+  top: -439px;
+  content: "";
+  background: #62c498;
+  filter: blur(250px);
+}
+
+.brand-logo {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* identical to box height */
+  letter-spacing: 0.0125em;
+
+  color: #ffffff;
+}
+
+.navbar-links {
+  /* Header Text */
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  /* identical to box height, or 100% */
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+}
+
+.navbar-links:hover {
+  color: #ffffff;
+}
+
+.register-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  gap: 10px;
+
+  width: 137px;
+  height: 40px;
+
+  /* Primary/100 */
+  background: linear-gradient(
+      0deg,
+      rgba(6, 90, 137, 0.4),
+      rgba(6, 90, 137, 0.4)
+    ),
+    #00cb51;
+  border-radius: 4px;
+}
+
+.navbar-toggler {
+  background: white;
+}
+
+/* ********************
+*********************
+Banner CSS 
+*******************
+*********************/
+.main-banner {
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.main-banner h1 {
+  color: #ffffff;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.main-banner p {
+  width: 70%;
+}
+
+.main-banner .btn {
+  margin-top: 30px;
+  padding: 25px 40px;
+}
+
+.banner-img {
+  background: url("./group.png") no-repeat center / cover;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-banner h1 {
+    width: 100%;
+  }
+
+  .main-banner p {
+    width: 100%;
+  }
+}
+
+/* ********************
+*********************
+Start Trading CSS 
+*******************
+*********************/
+.start-trading {
+  padding: 100px 0;
+}
+
+.startTrading-btn a {
+  padding: 25px 50px;
+}
+
+.t-green {
+  color: #00cb51;
+}
+
+/* ********************
+*********************
+Footer CSS 
+*******************
+*********************/
+footer {
+  background: #0e1220 !important;
+  color: #ffffff;
+  padding: 100px 0 0px 0;
+}
+.lower-footer-icon a {
+  font-size: 18px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h4 {
+  color: #ffffff;
+}
+
+.footer-logo {
+  width: 30px !important;
+}
+
+.lower-footer-icon .f:hover {
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+.lower-footer-icon .t:hover {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.lower-footer-icon .linked:hover {
+  background-color: #00b489;
+  border-color: #00b489;
+}
+
+.footer-box ul {
+  text-align: left;
+}
+
+.footer-box img {
+  width: 140px;
+}
+
+.footer-box h6 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-box a {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 36px;
+}
+
+.footer-box p {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.lower-footer p {
+  color: #ffffff;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  footer .button-group a img {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .lower-footer {
+    text-align: center;
+  }
+  .lower-footer-icon {
+    justify-content: center;
+    float: none !important;
+  }
+  .lower-text {
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+  .text-body {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .footer-box {
+    text-align: center;
+  }
+}
+.lower-footer-area {
+  padding-top: 20px;
+}
+
+footer .button-group img {
+  max-width: 150px;
+}
+
+.line {
+  border: 1px solid #ffffff26;
+  width: 100%;
+}
