@@ -44,6 +44,78 @@ export const sitedata = {
       },
     },
   },
+  downloadApps: {
+    title: {
+      text: "Build Your Portfolio",
+      highlight: "Anywhere at Anytime",
+    },
+    description:
+      "Build your crypto portfolio without any bustle. You can build it on your phone, on your tablet or even on your computer",
+    items: [
+      {
+        icon: "/assets/images/appImages/window.png",
+        alt: "Windows",
+        href: "#google",
+      },
+      {
+        icon: "/assets/images/appImages/apple.png",
+        alt: "Apple",
+        href: "#google",
+      },
+      {
+        icon: "/assets/images/appImages/g-play.png",
+        alt: "Google Play",
+        href: "#google",
+      },
+      {
+        icon: "/assets/images/appImages/andriod.png",
+        alt: "Andriod",
+        href: "#google",
+      },
+    ],
+    downloadAppImg: {
+      img1: "/assets/images/appImages/iphone-12-1.png",
+      img2: "/assets/images/appImages/iphone-12-2.png",
+    },
+  },
+  getstarted: {
+    title: {
+      text: "Get",
+      highlight: "Started",
+    },
+    description: "Create Your Account and Start Trading",
+    items: [
+      {
+        icon: "/assets/images/getstarted1.png",
+        title: "Create Your Account",
+        description:
+          "Create your account and register yourself to get the card",
+      },
+      {
+        icon: "/assets/images/getstarted2.png",
+        title: "Link Your Bank Account",
+        description:
+          "Verify your bank account to start complete your registration",
+      },
+      {
+        icon: "/assets/images/getstarted3.png",
+        title: "Start Trading",
+        description: "Once you have completed the registration, Start Trading.",
+      },
+    ],
+  },
+  startTrading: {
+    title: {
+      text: "Ready to Enter in the",
+      highlight: "world of Crypto?",
+    },
+    description:
+      "Discover how specific cryptocurrencies work — and get a bit of each crypto to try out for yourself.",
+    button: {
+      name: "Start Trading",
+      href: "#start",
+    },
+  },
   footer: {
     logo: {
       img: "/assets/images/Exclude.png",

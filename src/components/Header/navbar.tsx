@@ -5,6 +5,23 @@ import { NavbarProps } from "./propsInterface/navbarProps";
 function MyNavbar({ navbarData }: NavbarProps) {
   const [expanded, setExpanded] = useState(false);
 
+  const token = localStorage.getItem("token");
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+  };
+
+  const button = token ? (
+    <Nav.Link className="navbar-links" href="#logout" onClick={logout}>
+      Logout
+    </Nav.Link>
+  ) : (
+    <Nav.Link className="navbar-links" href={navbarData.buttons.login.href}>
+      {navbarData.buttons.login.name}
+    </Nav.Link>
+  );
+
   const toggleExpanded = () => {
     setExpanded(!expanded);
   };
@@ -29,12 +46,7 @@ function MyNavbar({ navbarData }: NavbarProps) {
             ))}
           </Nav>
           <Nav className="mr-auto align-items-center">
-            <Nav.Link
-              className="navbar-links"
-              href={navbarData.buttons.login.href}
-            >
-              {navbarData.buttons.login.name}
-            </Nav.Link>
+            {button}
             <Nav.Link
               className="register-btn mx-3 text-white"
               href={navbarData.buttons.register.href}

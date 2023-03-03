@@ -1,17 +1,35 @@
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { sitedata } from "./content/content";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import StartTrading from "./components/StartTrading";
+import Login from "./Pages/login";
+import Home from "./Pages/home";
+
+type AuthStatus = "loggedOut" | "loggingIn" | "loggedIn" | "loginError";
 
 function App() {
+  const [authStatus, setAuthStatus] = useState<AuthStatus>("loggedOut");
+
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    if (token) {
+      setAuthStatus("loggedIn");
+    }
+  }, [token]);
+
   return (
-    <div className="App">
-      <Header headerData={sitedata.header} />
-      <StartTrading />
-      <Footer footerData={sitedata.footer} />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {authStatus === "loggedIn" ? (
+            <Route path="/" element={<Home />} />
+          ) : (
+            <Route path="/" element={<Login />} />
+          )}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

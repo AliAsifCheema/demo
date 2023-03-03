@@ -1,24 +1,3 @@
-.App {
-  background: #0e1220;
-}
-
-.bg-overlay {
-  background: rgba(17, 165, 110, 0.15);
-}
-
-.bg-categories {
-  background: #044049;
-}
-
-.bg-cards {
-  background: linear-gradient(
-      0deg,
-      rgba(6, 90, 137, 0.4),
-      rgba(6, 90, 137, 0.4)
-    ),
-    #00cb51;
-}
-
 h1 {
   font-family: "Urbanist";
   font-style: normal;
@@ -192,6 +171,10 @@ ul {
   border-radius: 4px;
 }
 
+section {
+  padding: 100px 0;
+}
+
 /* ********************
 *********************
 Navbar CSS 
@@ -310,11 +293,131 @@ Banner CSS
 
 /* ********************
 *********************
+Download Apps CSS 
+*******************
+*********************/
+.download-app {
+  overflow: hidden;
+}
+
+.download_app_img {
+  position: relative;
+}
+
+.download_app_img::before {
+  position: absolute;
+  width: 127px;
+  height: 127px;
+  bottom: 215px;
+  right: 314px;
+  content: "";
+  background: #039b40;
+  filter: blur(250px);
+}
+
+.download_app_btn {
+  display: flex;
+  width: 184px;
+  height: 106px;
+  align-items: center;
+  background: #0e1220;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 25%);
+  margin: 30px 0px;
+}
+
+.download_app_btn a img {
+  width: 50px;
+}
+
+.download_app_btn a {
+  margin: auto;
+}
+
+.download_app_img {
+  position: relative;
+}
+
+.download_app_img .overlay-img {
+  position: absolute;
+  left: 130px;
+  bottom: 20px;
+}
+
+/* ********************
+*********************
+Get Started CSS 
+*******************
+*********************/
+.get-started {
+  position: relative;
+  overflow: hidden;
+}
+
+.get-started::before {
+  position: absolute;
+  width: 154.75px;
+  height: 152.95px;
+  right: 0;
+  top: 0px;
+  content: "";
+  background: #134f20;
+  filter: blur(110px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.get-started-bg::before {
+  position: absolute;
+  width: 172.75px;
+  height: 172.95px;
+  left: 0;
+  bottom: 167px;
+  content: "";
+  background: #134f20;
+  filter: blur(110px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.getStarted_heading p {
+  color: #b2dcc6;
+}
+
+.get-started__item__content p {
+  width: 60%;
+  font-size: 20px;
+  color: #e0e0e0;
+  margin: auto;
+}
+
+/* ********************
+*********************
 Start Trading CSS 
 *******************
 *********************/
-.start-trading {
-  padding: 100px 0;
+.startTrading {
+  position: relative;
+  overflow: hidden;
+}
+.startTrading::before {
+  position: absolute;
+  width: 154.75px;
+  height: 152.95px;
+  right: 0;
+  top: 0px;
+  content: "";
+  background: #118aa5;
+  filter: blur(117.365px);
+  transform: matrix(0.99, 0.12, 0.12, -0.99, 0, 0);
+}
+
+.startTrading .startTrading-content::before {
+  position: absolute;
+  width: 100.75px;
+  height: 92.95px;
+  bottom: 170px;
+  content: "";
+  background: #118aa5;
+  filter: blur(117.365px);
+  transform: matrix(0.99, 0.12, 0.12, -0.99, 0, 0);
 }
 
 .startTrading-btn a {
@@ -444,5 +547,22 @@ footer .button-group img {
 
 .line {
   border: 1px solid #ffffff26;
+  width: 100%;
+}
+
+/* ********************
+*********************
+Login CSS 
+*******************
+*********************/
+
+.login {
+  background: #ffffff;
+  width: 40%;
+  margin: auto;
+  padding: 50px;
+}
+
+.login input {
   width: 100%;
 }
